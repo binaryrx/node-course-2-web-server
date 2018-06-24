@@ -41,7 +41,7 @@ hbs.registerHelper('screamIt',(text)=>{
 
 
 app.get('/',(req,res)=>{
-    res.render('index',{
+    res.render('index.hbs',{
         pageTitle:'Home Page',
         welcomeMessage:'Welcome to the home page of BinaryRx.',
     })
@@ -57,7 +57,7 @@ app.get('/bad',(req,res)=>{
     res.send({
         errorMessage:'unable to fulfill this request!',
     })
-})
+});
 
 app.listen(port,()=>{
     console.log(`Server is up on port ${port}`);
