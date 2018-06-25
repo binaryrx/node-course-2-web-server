@@ -30,6 +30,7 @@ app.use((req,res,next)=>{
 // });
 
 app.use(express.static(__dirname + '/public'));
+app.use(express.static(__dirname + '/views'));
 
 hbs.registerHelper('getCurrentYear',()=>{
     return new Date().getFullYear();
