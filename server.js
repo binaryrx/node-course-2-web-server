@@ -44,7 +44,7 @@ hbs.registerHelper('screamIt',(text)=>{
 
 
 app.get('/',(req,res)=>{
-    res.render('index.hbs',{
+    res.render('home.hbs',{
         pageTitle:'Home Page',
         welcomeMessage:'Welcome to the home page of BinaryRx.',
     })
